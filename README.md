@@ -2,7 +2,8 @@
 Applying a transformer-based model to classify the levels of Ozone in center of Madrid (Plaza España station). We also make the predictions with other machine learning models such as Multi Layer Perceptron Netwroks, Long-short term memory networks or Random Forest. 
 
 ## Data
-Data was extracted from public sources (http://www.aemet.es/ and https://datos.madrid.es/portal/site/egob). Data was previously preprocessing. Previous values were imputed in NA and in outlier cases.
+Data was extracted from public sources (http://www.aemet.es/ and https://datos.madrid.es/portal/site/egob). 
+Data was previously preprocessed. Previous values were imputed in NA and in outlier cases (3Q + 3*IQR and 1Q - 3*IQR).
 The predictor variables used are:
 
 -Hourly NO concentration in Plaza España Station. 
