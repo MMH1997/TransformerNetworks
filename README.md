@@ -1,10 +1,10 @@
 # Deep Transformer Networks. 
-Applying a transformer-based model to classify the levels of Ozone in center of Madrid (Plaza España station). We also make the predictions with other machine learning models such as Multi Layer Perceptron Netwroks, Long-short term memory networks or Random Forest. 
+We apply a transformer-based model to classify the levels of Ozone in center of Madrid (Plaza España station). We also evaluate the performance in the same task of other machine learning algorithms such as Multi Layer Perceptron Netwroks, Long-Short Term Memory networks and Random Forest. 
 
 ## Data
 Data was extracted from public sources (http://www.aemet.es/ and https://datos.madrid.es/portal/site/egob). 
-Data was previously preprocessed. Previous values were imputed in NA and in outlier cases (3Q + 3*IQR and 1Q - 3*IQR).
-The predictor variables used are:
+Data was previously preprocessed. It consisted firstly in the imputation of the previous value in missing values and in outlier values (3Q + 3*IQR and 1Q - 3*IQR). Then, we unified all data in an hourly format. 
+The predictor variables used were:
 
 -Hourly NO concentration in Plaza España Station. 
 
@@ -33,3 +33,9 @@ The predictor variables used are:
 -Weekday.
 
 -Type of day (diary day, saturday, sunday, public holyday). 
+
+The target variable was:
+
+-Hourly O3 concentration in Plaza España Station. 
+
+
